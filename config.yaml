@@ -1,0 +1,32 @@
+# 阿里云配置
+aliyun:
+  access_key_id: "your_access_key_id"
+  access_key_secret: "your_access_key_secret"
+  region: "cn-hangzhou"
+
+# 域名配置
+domains:
+  # 证书域名列表
+  cert_domains:
+    - "example.com"
+    - "*.example.com"
+  # CDN域名列表，如果不设置则使用cert_domains
+  cdn_domains:
+    - "www.example.com"
+    - "api.example.com"
+
+# 邮件通知配置
+email:
+  to: "your-email@example.com"
+  smtp:
+    host: "smtp.gmail.com"
+    port: 587
+    user: "your-smtp-user@gmail.com"
+    password: "your-smtp-password"
+
+# 证书配置
+cert:
+  # 检查更新间隔（天）
+  check_interval: 15
+  # DNS记录生效等待时间（秒）
+  dns_wait_time: 20 
